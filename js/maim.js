@@ -22,23 +22,28 @@ let skills = [
         nombre: 'HTML'
     },
     {
-        img: '../img/css3_logo.png',
+        img: 'https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png',
+        //img: '../img/css3_logo.png',
         nombre: 'CSS'
     },
     {
-        img: '../img/JS_logo.webp',
+        img:'https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png',
+        // img: '../img/JS_logo.webp',
         nombre: 'JS'
     },
     {
-        img: '../img/bootstrap_logo.png',
+        img:'https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png',
+        // img: '../img/bootstrap_logo.png',
         nombre: 'BOOTSTRAP'
     },
     {
-        img: '../img/materiaUI_logo.png',
+        img:'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png',
+        // img: '../img/materiaUI_logo.png',
         nombre: 'MATERIAL_UI'
     },
     {
-        img: '../img/sass_logo.png',
+        img:'https://seeklogo.com/images/S/sass-logo-E41E7734A8-seeklogo.com.png',
+        // img: '../img/sass_logo.png',
         nombre: 'SASS'
     },
     {
