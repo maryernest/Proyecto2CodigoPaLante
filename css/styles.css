@@ -1,0 +1,497 @@
+/* ================ GENERAL ============= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* COLORES */
+:root {
+  --FondoGeneral: #fbfbfb;
+  --FondoHablemos: #f58bf383;
+  --FondoHablemosDark: #291751b5;
+  --FondoBoton: #af599e;
+  --FondoBotonDark: #041b40;
+  --FondoFooter: #af599e;
+  --FondoHFDark: #11001d;
+
+  --ColorTextosGeneral: #0f0f0f;
+  --ColorTextoBoton: #fbfbfb;
+  --ColorTexto: #fbfbfb;
+}
+
+/* TAMAÑO DE TEXTO */
+:root {
+  --TextoGeneral: 18px;
+  --TextoBoton: 20px;
+  --TituloPrincipal: 36px;
+  --TitulosSecundarios: 28px;
+}
+
+body {
+  background: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--ColorTextosGeneral);
+  font-size: var(--TextoGeneral);
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================ HEADER =================== */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 1px #c4c4c4;
+  height: 90px;
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 101;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  border-radius: 50%;
+  box-shadow: -3px 2px 5px 0px #b6b6b6;
+  margin-left: 1em;
+  height: 4em;
+  width: 4.5em;
+}
+
+/* ---- Menú Hamburguesa ---- */
+#btn-burguer {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  margin-right: 40px;
+  outline: none;
+  height: 50px;
+  width: 50px;
+}
+#close {
+  display: none;
+}
+nav {
+  display: none;
+}
+body.movile-menu-active {
+  overflow: hidden;
+}
+body.movile-menu-active #close {
+  display: block;
+}
+body.movile-menu-active #open {
+  display: none;
+}
+body.movile-menu-active header {
+  flex-wrap: wrap;
+  align-items: center;
+  height: 50vh;
+  transition: height 0.3s;
+}
+body.movile-menu-active nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+body.movile-menu-active ul#menu {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body.movile-menu-active ul li {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+body.movile-menu-active ul li:hover {
+  color: var(--ColorTextoBoton);
+  background-color: var(--FondoBoton); 
+}
+
+/*--- Btn-ModoDark Antes -----*/
+#openDark{
+  display: none;
+}
+#closeDark{
+  display: block;
+  color: #ffffff;
+  background-color: #001244e2 ;
+  border-radius: 15px;
+  line-height: 1.3;
+  height: 25px;
+  width: 50px;
+}
+
+/* -------------- Modo Ocuro ------------ */
+#modo-dark{
+  background: transparent;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  outline: none;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+body.modo-dark #closeDark {
+  display: none;
+}
+
+/*--------- Btn-ModoDark Despues ---------*/
+body.modo-dark #openDark{
+  display: block;
+  /* color: #f9b9f3; */
+  color: #f35ade;;
+  background-color: #ffffff;;
+  /* background-color: #ffffff ; */
+  border-radius: 15px;
+  line-height: 1.3;
+  height: 25px;
+  width: 50px;
+}
+body.modo-dark #closeDark{
+  display: none;
+}
+
+/*--------- Heade ---------*/
+body.modo-dark header{
+  background-color: var(--FondoHFDark) ;
+  box-shadow: 1px 1px 5px 1px #79086f;
+  color: var(--ColorTexto);
+}
+/*------- Hamburguesa -------*/
+body.modo-dark #btn-burguer i {
+  color: #ffffff;
+  font-size: 25px;
+}
+body.modo-dark #open {
+  display: block;
+}
+body.modo-dark #close {
+  display: none;
+}
+
+/*--------- Inicio ---------*/
+body.modo-dark #inicio .btn {
+  background-color: var(--FondoBotonDark );
+}
+body.modo-dark #inicio .btn:hover {
+  border: 1px solid #ffffff;
+}
+body.modo-dark #inicio > figure > img {
+  box-shadow: 0px 0px 0px 10px #fdaab69a;
+}
+body.modo-dark #inicio > article > p {
+  background-color: var(--FondoHablemosDark);
+
+}
+/*---------- Color Background ----------*/
+body.modo-dark{
+  background: url(../img/modoDark-back.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--ColorTexto);  
+}
+/*--------- Foto ---------*/
+body.modo-dark #inicio .foto {
+  box-shadow: 0px 0px 0px 10px #59025ee8;
+}
+
+/*--------- Habilidades ---------*/
+body.modo-dark #habilidades > article {
+  background-color: var(--FondoHablemosDark);
+}
+body.modo-dark article > ul > li {
+  background-color: #11001d;
+}
+
+/*--------- Contacto ---------*/
+body.modo-dark #contacto > nav > ul > li {
+  background-color: #798fe9aa;
+}
+
+/*--------- Footer ---------*/
+body.modo-dark footer{
+  background-color: var(--FondoHFDark) ;
+  color: var(--ColorTexto);
+}
+body.modo-dark footer p {
+  color: #ffffff;
+}
+
+/* ================= MAIN ================= */
+main {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6em;
+  margin-bottom: 7em;
+}
+
+/*------------ SECTION id="inicio" ------------ */
+#inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+#inicio > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#inicio .foto {
+  box-shadow: 0px 0px 0px 10px #fdaab69a;
+  border-radius: 50%;
+  width: 15vw;
+  min-width: 250px;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+  margin: 3px;
+  font-size: var(--TituloPrincipal);
+  text-align: center;
+}
+#inicio > article > p {
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0 3em;
+  background-color: #fd83fb43;
+  padding: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#inicio .btn {
+  background-color: var(--FondoBoton);
+  border: none;
+  border-radius: 40px;
+  color: var(--ColorTextoBoton);
+  font-size: var(--TextoBotón);
+  margin-top: 30px;
+  height: 45px;
+  width: 180px;
+}
+#inicio .btn:hover {
+  /* border: 5px solid #f8c7ce; */
+  transition: 0.2s;
+  border: 4px solid #57006f;
+}
+
+/*------------ SECTION id="habilidades" ------------ */
+#habilidades {
+  margin: 15px;
+}
+#habilidades > article {
+  background-color: var(--FondoHablemos);
+  border-radius: 10px;
+  padding: 1.5em 3em;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+article > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article > ul > li {
+  background-color: #ffffff;
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin: 10px ;
+  height: 80px;
+  width: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article > ul > li > img {
+  height: 90%;
+  width: 95%;
+}
+article > ul > li > img:hover {
+  height: 95%;
+  width: 100%;
+  transition: 2s;
+}
+h5{
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+/*------------ SECTION id="contacto" ------------ */
+
+#contacto > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+#contacto > nav > ul > li {
+  background-color: var(--FondoHablemos);
+  border-radius: 20px;
+  width: 80px;
+  height: 70px;
+  line-height: 4.5;
+  padding-left: 3px;
+}
+.fa-brands, .fa-regular {
+  font-size: 50px;
+}
+
+/* ================ FOOTER ================ */
+footer {
+  background-color: var(--FondoFooter);
+  color: var(--ColorTextoFooter);
+  font-size: var(--TextoFooter);
+  padding: 0 35px;
+  height: 50px;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer section{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+}
+footer h5 {
+  color: #f3f3f3;
+  margin-bottom: 5px;
+}
+footer p {
+  border: 1px solid #f3f3f3;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  font-size: 14px;
+  line-height: 0.5;
+  padding-left: 2px;
+  color: #c4c4c4;
+}
+footer img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+/************ MEDIAS QUERY **************/
+
+/* =================================== */
+@media screen and (min-width: 1024px) {
+  /* =================================== */
+
+  main {
+    margin-top: 8em;
+  }
+
+  /* --------------- HEADER ------------ */
+  nav {
+    display: block;
+  }
+  #menu {
+    display: flex;
+    gap: 50px;
+    margin-right: 1em;
+  }
+  ul li:hover {
+    box-shadow: 0px 3px 3px 0px;
+    transition: 500ms;
+  }
+  #btn-burguer {
+    display: none;
+  }
+
+  
+  /* ----------- INICIO ---------- */
+  #inicio {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #inicio .foto  {
+    max-width: 400px;
+    width: 25vw;
+  }
+  #inicio > article > p {
+    text-align: justify;
+  }
+
+  /*------------ HABILIDADES ------------ */
+
+  #habilidades {
+    margin: 5px;
+  }
+  #habilidades > article {
+    padding: 1.5em 8em;
+  }  
+  article > ul > li > img {
+    height: 50%;
+    width: 50%;
+  }
+  article > ul > li {
+    height: 100px;
+    width: 100px;
+  }
+  h5{
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  /*------------ CONTACTO ------------ */
+  #contacto > nav > ul > li {
+   
+    width: 110px;
+    height: 110px;
+    line-height: 8;
+    padding-left: 15px;
+  }
+  .fa-brands, .fa-regular {
+    font-size: 80px;
+  }
+  .fa-brands:hover {
+    font-size: 90px;
+    transition: 0.5s;
+  }
+  .fa-regular:hover {
+    font-size: 90px;
+    transition: 0.5s;
+  }
+}
