@@ -18,88 +18,83 @@ modoDark.addEventListener('click', () => {
 // ************** LISTA DE HABILIDADES **************
 let skills = [
     {
-        img: '../img/html5_logo.png',
+        img: 'https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png',
         nombre: 'HTML'
     },
     {
         img: 'https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png',
-        //img: '../img/css3_logo.png',
         nombre: 'CSS'
     },
     {
         img:'https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png',
-        // img: '../img/JS_logo.webp',
         nombre: 'JS'
     },
     {
         img:'https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png',
-        // img: '../img/bootstrap_logo.png',
         nombre: 'BOOTSTRAP'
     },
     {
         img:'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png',
-        // img: '../img/materiaUI_logo.png',
         nombre: 'MATERIAL_UI'
     },
     {
         img:'https://seeklogo.com/images/S/sass-logo-E41E7734A8-seeklogo.com.png',
-        // img: '../img/sass_logo.png',
         nombre: 'SASS'
     },
     {
-        img: '../img/vite_logo.png',
+        img: 'https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png',
         nombre: 'VITE'
     },
     {
-        img: '../img/react_logo.png',
+        img: 'https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png',
         nombre: 'REACT'
     },
     {
-        img: '../img/figma_logo.png',
+        img: 'https://seeklogo.com/images/F/figma-logo-E4E21D3AEA-seeklogo.com.png',
         nombre: 'FIGMA'
     },
     {
-        img: '../img/java_logo.png',
+        img: 'https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png',
         nombre: 'JAVA'
     },
     {
-        img: '../img/springBoot_logo.png',
+        img: 'https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png',
         nombre: 'SPRING_BOOT'
     },
     {
-        img: '../img/postman_logo.png',
+        img: 'https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png',
         nombre: 'POSTMAN'
     },
     {
-        img: '../img/mysql_logo.png',
+        img: 'https://seeklogo.com/images/M/mysql-logo-B047FB7790-seeklogo.com.png',
         nombre: 'WORKBENCH'
     },
     {
-        img: '../img/aws_logo.png',
+        img: 'https://seeklogo.com/images/A/amazon-web-services-aws-logo-6C2E3DCD3E-seeklogo.com.png',
         nombre: 'AWS'
     },
     {
-        img: '../img/vsc_logo.png',
+        img: 'https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png',
         nombre: 'VSC'
     },
     {
-        img: '../img/intellij_logo.png',
+        img: 'https://seeklogo.com/images/I/intellij-idea-logo-F0395EF783-seeklogo.com.png',
         nombre: 'INTELLIJ_IDEA'
     },
     {
-        img: '../img/VMware_logo.webp',
+        img: 'https://www.freepnglogos.com/uploads/vmware-png-logo/vmware-workstation-png-logo-7.png',
         nombre: 'VMWARE'
     },
     {
-        img: '../img/Virtualbox_logo.png',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png?20150209215936',
         nombre: 'VIRTUALBOX'
     },
     {
-        img: '../img/gitBash_logo.png',
+        img: 'https://seeklogo.com/images/G/git-bash-logo-B6475E8359-seeklogo.com.png',
         nombre: 'GIT_BASH'
     },
     {
-        img: '../img/gitHub_logo.png',
+        img: 'https://static-00.iconduck.com/assets.00/github-desktop-icon-2046x2048-r5plljad.png',
         nombre: 'GIT_HUB'
     },
 ];
