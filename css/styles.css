@@ -106,7 +106,7 @@ body.movile-menu-active header {
   height: 50vh;
   transition: height 0.3s;
 }
-body.movile-menu-active nav {
+body.movile-menu-active header nav {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -117,13 +117,13 @@ body.movile-menu-active ul#menu {
   justify-content: center;
   height: 100%;
 }
-body.movile-menu-active ul li {
+body.movile-menu-active header ul li {
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
   text-align: center;
 }
-body.movile-menu-active ul li:hover {
+body.movile-menu-active header ul li:hover {
   color: var(--ColorTextoBoton);
   background-color: var(--FondoBoton); 
 }
@@ -142,6 +142,8 @@ body.movile-menu-active ul li:hover {
   width: 50px;
 }
 
+
+
 /* ============== Modo Ocuro =============== */
 #modo-dark{
   background: transparent;
@@ -154,13 +156,11 @@ body.movile-menu-active ul li:hover {
   justify-content: flex-end;
   cursor: pointer;
 }
-
 body.modo-dark #closeDark {
   display: none;
 }
 
 /*----- Btn-ModoDark Despues ----*/
-
 body.modo-dark #openDark{
   display: block;
   color: #f35ade;;
@@ -174,15 +174,14 @@ body.modo-dark #openDark{
 body.modo-dark #closeDark{
   display: none;
 }
-
-
-/*--------- Heade ---------*/
+/*--------- Heade ModoOcuro ---------*/
 body.modo-dark header{
   background-color: var(--FondoHFDark) ;
   box-shadow: 1px 1px 5px 1px #79086f;
   color: var(--ColorTexto);
 }
-/*------- Hamburguesa -------*/
+
+/*------- Hamburguesa ModoOcuro ------*/
 body.modo-dark #btn-burguer i {
   color: #ffffff;
   font-size: 25px;
@@ -194,7 +193,7 @@ body.modo-dark #close {
   display: none;
 }
 
-/*--------- Inicio ---------*/
+/*--------- Inicio ModoOcuro -------*/
 body.modo-dark #inicio .btn {
   background-color: var(--FondoBotonDark );
 }
@@ -206,21 +205,20 @@ body.modo-dark #inicio > figure > img {
 }
 body.modo-dark #inicio > article > p {
   background-color: var(--FondoHablemosDark);
-
 }
-/*---------- Color Background ----------*/
+/*------- Color Background ModoOcuro -----*/
 body.modo-dark{
   background: url(../img/modoDark-back.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--ColorTexto);  
 }
-/*--------- Foto ---------*/
+/*--------- Foto ModoOcuro ---------*/
 body.modo-dark #inicio .foto {
   box-shadow: 0px 0px 0px 10px #59025ee8;
 }
 
-/*--------- Habilidades ---------*/
+/*------ Habilidades ModoOcuro -------*/
 body.modo-dark #habilidades > article {
   background-color: var(--FondoHablemosDark);
 }
@@ -228,12 +226,12 @@ body.modo-dark article > ul > li {
   background-color: #11001d;
 }
 
-/*--------- Contacto ---------*/
+/*------- Contacto ModoOcuro ------*/
 body.modo-dark #contacto > nav > ul > li {
   background-color: #798fe9aa;
 }
 
-/*--------- Footer ---------*/
+/*------- Footer ModoOcuro -------*/
 body.modo-dark footer{
   background-color: var(--FondoHFDark) ;
   color: var(--ColorTexto);
@@ -241,9 +239,6 @@ body.modo-dark footer{
 body.modo-dark footer p {
   color: #ffffff;
 }
-
-
-
 
 
 /* ================= MAIN ================= */
