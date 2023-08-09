@@ -55,6 +55,7 @@ a {
 header {
   background-color: #ffffff;
   box-shadow: 1px 1px 5px 1px #c4c4c4;
+  font-size: 16px;
   height: 90px;
   width: 100%;
 
@@ -75,7 +76,7 @@ header img {
   width: 4.5em;
 }
 
-/* ---- Menú Hamburguesa ---- */
+/* ======== Menú Hamburguesa ====== */
 #btn-burguer {
   background: transparent;
   border: none;
@@ -103,29 +104,39 @@ body.movile-menu-active #open {
 body.movile-menu-active header {
   flex-wrap: wrap;
   align-items: center;
-  height: 50vh;
+  height: 35vh;
   transition: height 0.3s;
 }
-body.movile-menu-active header nav {
+body.movile-menu-active nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50%;
+  height: 60%;
 }
 body.movile-menu-active ul#menu {
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-body.movile-menu-active header ul li {
+body.movile-menu-active ul li {
   border-radius: 10px;
-  margin: 10px;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
 }
-body.movile-menu-active header ul li:hover {
+body.movile-menu-active ul li:hover {
   color: var(--ColorTextoBoton);
   background-color: var(--FondoBoton); 
+}
+body.movile-menu-active ul li:hover {
+  color: var(--ColorTextoBoton);
+  background-color: var(--FondoBoton); 
+}
+body.movile-menu-active #contacto nav ul {
+  gap: 60px; 
+}
+body.movile-menu-active #contacto nav ul li {
+  line-height: 4.5;
+  padding-left: 0px;
 }
 
 /*--- Btn-ModoDark Antes -----*/
@@ -260,12 +271,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
   gap: 10px;
 }
 #inicio .foto {
   box-shadow: 0px 0px 0px 10px #fdaab69a;
   border-radius: 50%;
   width: 15vw;
+  margin-top: 2em;
   min-width: 250px;
 }
 h1 {
@@ -417,18 +430,19 @@ footer img {
 
 /************ MEDIAS QUERY **************/
 
-/* =================================== */
+/* ===================================================== */
 @media screen and (min-width: 1024px) {
-  /* =================================== */
+/* ====================================================== */
 
   main {
     margin-top: 8em;
   }
 
   /* --------------- HEADER ------------ */
-  nav {
+  header nav {
     display: block;
   }
+ 
   #menu {
     display: flex;
     gap: 50px;
