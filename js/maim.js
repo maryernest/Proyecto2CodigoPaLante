@@ -1,7 +1,6 @@
 // ******** BOTON MENÚ HAMBURGUESA Y MODO ODCURO **********
 
 const btnBurger = document.querySelector('#btn-burguer')
-const modoDark = document.querySelector('#modo-dark');
 
 btnBurger.addEventListener('click', () => {
     document.body.classList.toggle('movile-menu-active')
@@ -9,6 +8,9 @@ btnBurger.addEventListener('click', () => {
 
 
 // **************** BOTON MODO DARK *****************
+
+const modoDark = document.querySelector('#modo-dark');
+const footer = document.querySelector('footer')
 
 modoDark.addEventListener('click', () => {
     document.body.classList.toggle('modo-dark')
@@ -122,7 +124,3 @@ skills.forEach( (skill) => {
     const skillListItem = crearHTMLSkill(skill);
     listarSkill.appendChild(skillListItem);
 });
-
-
-
-
